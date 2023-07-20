@@ -1,0 +1,609 @@
+body {
+  /* background-image: url("Template.png"); */
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* #particles-js {
+  width: 100%;
+  height: 110rem;
+  background: black;
+} */
+
+/* -------------------- nav bar styles ------------------- */
+
+#particles-js {
+  position:absolute;
+  width: 100%;
+  height: 170%;
+  background: black;
+  z-index: 1;
+}
+
+.main_logo {
+  transition: transform 0.2s;
+}
+.main_logo:hover {
+  transform: scale(1.25);
+}
+.scitech {
+  position: absolute;
+  z-index: 10;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.7rem;
+  left: 1vw;
+  top: 20%;
+  color: #fff;
+}
+
+.college {
+  position: absolute;
+  z-index: 10;
+  font-family: "Bebas Neue", cursive;
+  right: 1vw;
+  top: 20%;
+  text-align: right;
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  padding-top: 2.5em;
+  background: rgba(21, 19, 19, 0.9);
+  height: 3%;
+  padding-bottom: 2%;
+  padding-left: 32.5%;
+  padding-right: 45%;
+  z-index: 50000;
+}
+
+.nav-logo {
+  height: 4rem;
+  width: 4rem;
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  color: #ffb600;
+}
+
+.nav-logo:hover {
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.nav-logo:hover::before {
+  -webkit-transform: scale(0.925);
+  -moz-transform: scale(0.925);
+  -ms-transform: scale(0.925);
+  -o-transform: scale(0.925);
+  transform: scale(0.925);
+  box-shadow: 0 0 0 1px #fff;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+}
+.nav-logo:before {
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 25%;
+  bottom: 0;
+  box-shadow: 0 0 0 1px #fff;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+.nav-item {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, white 50%);
+  height: 2%;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding-top: 0.5%;
+  padding-bottom: 0.3%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-item:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 6%;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-item:hover {
+  background-position: 0;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: coral;
+  margin: auto;
+  display: block;
+}
+
+nav-link:hover::after {
+  width: 100%;
+  transition: width 0.5s linear;
+}
+
+/* -------------------- nav bar styles ------------------- */
+
+.logo-container {
+  position: relative;
+  margin-top: 10vh;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacttitle {
+  color: white;
+  font-size: 5vh;
+  margin-bottom:0px;
+  font-family: "Poppins", sans-serif;
+  z-index:2;
+}
+
+.contact {
+  height: 13%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  background: rgba(21, 19, 19, 0);
+  margin-bottom: 0.5%;
+  margin-top:0;
+  z-index:2;
+}
+
+.contact img {
+  max-width: 10vh;
+  height: auto;
+  margin: 0 3vw;
+}
+
+.contact img:hover{
+  border: 2px solid white;
+}
+
+/* ------------------------------ team styling ----------------------- */
+
+.team {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+  color: white;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  z-index:2;
+}
+
+#team {
+  position: relative;
+  padding: 5vh 0;
+  text-align: center;
+  background-color: black;
+  color: #145889;
+}
+#team h2 {
+  position: relative;
+  padding: 0px 0px 0px;
+}
+#team p {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+  margin: 25px 0px 40px;
+}
+#team h2::after {
+  content: "";
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+}
+#team .member {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #ffffff; */
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 0.5vh 0px 0.5vh 0px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  z-index:2;
+}
+
+#team .member-img img {
+  max-height: 15vw;
+}
+
+#team .member .member-info {
+  display: block;
+  position: absolute;
+  bottom: -200px;
+  left: 0px;
+  right:0px;
+  max-height: 8em;
+  transition: 0.4s;
+  padding: 1vw 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#team .member:hover .member-info {
+  bottom: 0px;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 1vw;
+  color: #fff;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 1vw;
+  color: #fff;
+}
+#team .member .social-links {
+  margin-top: 0.5em;
+}
+#team .member .social-links a {
+  transition: none;
+  color: #fff;
+}
+#team .member .social-links a:hover {
+  color: #ffc107;
+}
+#team .member .social-links i {
+  font-size: 1.5vw;
+  margin: 0 2px;
+}
+
+/* -------------------------------------team styling ends -------------------------- */
+
+.webdev {
+  position: relative;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  z-index:2;
+}
+
+/* -----------------------------credits-dev ----------------------- */
+
+#credits-dev {
+  position: relative;
+  padding: 5vh 0;
+  text-align: center;
+  background-color: black;
+  color: #145889;
+}
+#credits-dev h2 {
+  position: relative;
+  padding: 0px 0px 15px;
+}
+#credits-dev p {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+  margin: 25px 0px 40px;
+}
+#credits-dev h2::after {
+  content: "";
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+}
+#credits-dev .member {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #ffffff; */
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 0.5vh 0px 0.5vh 0px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  z-index:2;
+}
+
+#credits-dev .member-img img {
+  max-height: 15vw;
+}
+#credits-dev .member .member-info {
+  display: block;
+  position: absolute;
+  bottom: -200px;
+  left: 0px;
+  right:0px;
+  transition: 0.4s;
+  padding: 1vw 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#credits-dev .member:hover .member-info {
+  bottom: 0px;
+}
+#credits-dev .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 1vw;
+  color: #fff;
+}
+#credits-dev .member span {
+  font-style: italic;
+  display: block;
+  font-size: 1vw;
+}
+#credits-dev .member .social-links {
+  margin-top: 15px;
+}
+#credits-dev .member .social-links a {
+  transition: none;
+  color: #fff;
+}
+#credits-dev .member .social-links a:hover {
+  color: #ffc107;
+}
+#credits-dev .member .social-links i {
+  font-size: 1.5vw;
+  margin: 0 2px;
+}
+
+/* ----------------------------credits-designer-------------------------- */
+
+.webdesigner {
+  position: relative;
+  color: white;
+  font-size: 3vw;
+  text-align:center;
+  font-family: "Poppins", sans-serif;
+  z-index:2;
+}
+
+#credits-designer {
+  position: relative;
+  padding: 5vh 0;
+  text-align: center;
+  background-color: black;
+  color: #145889;
+}
+#credits-designer h2 {
+  position: relative;
+  padding: 0px 0px 15px;
+}
+#credits-designer p {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+  margin: 25px 0px 40px;
+}
+#credits-designer h2::after {
+  content: "";
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+}
+#credits-designer .member {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #ffffff; */
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 0.5vh 0px 0.5vh 0px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  z-index:2;
+}
+
+#credits-designer .member-img img {
+  max-height: 15vw;
+}
+#credits-designer .member .member-info {
+  display: block;
+  position: absolute;
+  bottom: -200px;
+  left: 0px;
+  right:0px;
+  transition: 0.4s;
+  padding: 1vw 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#credits-designer .member:hover .member-info {
+  bottom: 0px;
+}
+#credits-designer .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 1vw;
+  color: #fff;
+}
+#credits-designer .member span {
+  font-style: italic;
+  display: block;
+  font-size: 1vw;
+}
+#credits-designer .member .social-links {
+  margin-top: 15px;
+}
+#credits-designer .member .social-links a {
+  transition: none;
+  color: #fff;
+}
+#credits-designer .member .social-links a:hover {
+  color: #ffc107;
+}
+#credits-dev .member .social-links i {
+  font-size: 1vw;
+  margin: 0 2px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+}
+.collapse {
+  background-color: transparent;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  height: 7%;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  margin-top:2%;
+  z-index:2;
+}
+
+@media screen and (max-width: 800px){
+  .scitech {
+    font-size: 2.5vh;
+    left: 1vw;
+    color: #fff;
+  }
+
+  .college {
+    display: inline;
+    text-align: left;
+    left: 1vw;
+    top: 55%;
+    font-size: 2.5vh;
+    width: 17%;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 1vh;
+    left:90%;
+    padding: 0 0;
+  }
+
+  .contacttitle {
+    font-size: 3vh;
+  }
+
+  .contact img {
+    margin: 0 10px;
+    max-width: 8vh;
+  }
+
+  .team {
+    font-size: 4vh;
+    margin-top: 20px;
+  }
+
+  #team {
+    padding: 30px;
+  }
+
+  #team .member .member-info h4 {
+    font-size: 3vw;
+  }
+  #team .member span {
+    font-size: 3vw;
+  }
+
+  #team .member .social-links i {
+    font-size: 4.5vw;
+  }
+
+  #team .member-img img {
+    max-height: 25vh;
+  }
+
+  .webdev {
+    font-size: 3vh;
+  }
+
+  #credits-dev {
+    padding: 30px;
+  }
+
+  #credits-dev .member .member-info h4 {
+    font-size: 4vw;
+  }
+  /* #team .member span {
+    font-size: 3vw;
+  }
+
+  #team .member .social-links i {
+    font-size: 4.5vw;
+  } */
+
+
+  #credits-dev .member-img img {
+    max-height: 25vh;
+  }
+
+  .webdesigner {
+    font-size: 3vh;
+    margin-bottom: 0;
+  }
+
+  #credits-designer {
+    padding: 30px;
+  }
+
+  #credits-designer .member .member-info h4 {
+    font-size: 4vw;
+  }
+
+  #credits-designer .member-img img {
+    max-height: 25vh;
+  }
+
+  .footer {
+    font-size: 0.5vh;
+  }
+}
